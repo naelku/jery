@@ -45,7 +45,6 @@ logger.addHandler(stream_handler)
 logger.addHandler(connection_handler)
 logging.getLogger("pytgcalls").setLevel(logging.WARNING)
 
-aiosession = ClientSession()
 
 class Bot(Client):
     def __init__(self, **kwargs):
@@ -138,18 +137,18 @@ class Ubot(Client):
 
         return filters.create(func)
 
-    async def start(self):
-        await super().start()
-        await self.call_py.start()
-        handler = await get_pref(self.me.id)
-        if handler:
-            self._prefix[self.me.id] = handler
-        else:
-            self._prefix[self.me.id] = ["."]
-        self._ubot.append(self)
-        self._get_my_id.append(self.me.id)
-        self._translate[self.me.id] = "id"
-        print(f"[INFO] - ({self.me.id}) - STARTED")
+async def main():
+    await init_aiosession()
+    await bot.start()
+    if handler:
+        self._prefix[self.me.id] = handler
+    else:
+        self._prefix[self.me.id] = ["."]
+
+    self._ubot.append(self)
+    self._get_my_id.append(self.me.id)
+    self._translate[self.me.id] = "id"
+    print(f"[INFO] ({self.me.id}) - STARTED")
 
 
 bot = Bot(
