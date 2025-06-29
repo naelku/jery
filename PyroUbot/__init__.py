@@ -15,13 +15,16 @@ from pytgcalls import filters as fl
 from pyromod import listen
 from PyroUbot.config import *
 from aiohttp import ClientSession
+import asyncio
 
 aiosession = None
 
-async def init_aiosession():
+async def create_aiohttp_session():
     global aiosession
     if aiosession is None:
         aiosession = ClientSession()
+
+asyncio.run(create_aiohttp_session())
 
 class ConnectionHandler(logging.Handler):
     def emit(self, record):
