@@ -19,12 +19,10 @@ import asyncio
 
 aiosession = None
 
-async def create_aiohttp_session():
+async def init_aiosession():
     global aiosession
     if aiosession is None:
         aiosession = ClientSession()
-
-asyncio.run(create_aiohttp_session())
 
 class ConnectionHandler(logging.Handler):
     def emit(self, record):
