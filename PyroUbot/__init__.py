@@ -16,6 +16,13 @@ from pyromod import listen
 from PyroUbot.config import *
 from aiohttp import ClientSession
 
+aiosession = None
+
+async def init_aiosession():
+    global aiosession
+    if aiosession is None:
+        aiosession = ClientSession()
+
 class ConnectionHandler(logging.Handler):
     def emit(self, record):
         for X in ["OSError", "TimeoutError"]:
