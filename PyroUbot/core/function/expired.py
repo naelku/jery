@@ -38,7 +38,7 @@ async def expiredUserbots():
             
             # Process users in smaller batches
             active_ubots = list(ubot._ubot)
-            batch_size = min(5, len(active_ubots))
+            batch_size = max(1, min(5, len(active_ubots)))
             
             print(f"[INFO] Checking expiry status for {len(active_ubots)} userbots")
             
