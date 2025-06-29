@@ -58,7 +58,7 @@ async def check_expired_trials():
 
 <b>ᴛᴇʀɪᴍᴀᴋᴀsɪʜ ᴛᴇʟᴀʜ ᴍᴇɴᴄᴏʙᴀ ᴋɪɴɢᴢ ᴜsᴇʀʙᴏᴛ! ᴊɪᴋᴀ ᴀɴᴅᴀ ᴍᴇɴʏᴜᴋᴀɪ ʟᴀʏᴀɴᴀɴ ᴋᴀᴍɪ, sɪʟᴀʜᴋᴀɴ ʙᴇʟɪ ᴜsᴇʀʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴɴʏᴀ sᴇᴄᴀʀᴀ ᴘᴇɴᴜʜ.</b>
 
-<b>ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʟɪ, sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ: <a href=tg://openmessage?user_id={OWNER_ID}>@Boyszzzz</a> ᴀᴛᴀᴜ ᴊᴀʟᴀɴᴋᴀɴ ᴋᴏᴍᴀɴᴅᴏ /start</b></blockquote>
+<b>ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʟɪ, sɪʟᴀʜᴋᴀɴ ʜᴜʙᴜɴɢɪ: <a href=tg://openmessage?user_id={OWNER_ID}>@xcxidk</a> ᴀᴛᴀᴜ ᴊᴀʟᴀɴᴋᴀɴ ᴋᴏᴍᴀɴᴅᴏ /start</b></blockquote>
 """,
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup([
@@ -137,7 +137,7 @@ async def check_expired_sellers():
 <blockquote><b>Status reseller Anda telah berakhir pada {expired_date.strftime('%d-%m-%Y %H:%M:%S')}</b></blockquote>
 
 <blockquote><b>Untuk memperpanjang status reseller, silahkan hubungi:</b>
-<b>👨‍💼 <a href=tg://openmessage?user_id={OWNER_ID}>@Boyszzzz</a></b></blockquote>
+<b>👨‍💼 <a href=tg://openmessage?user_id={OWNER_ID}>@xcxidk</a></b></blockquote>
 
 <blockquote><b>Atau gunakan perintah /start untuk memperpanjang secara otomatis</b></blockquote>
 """,
