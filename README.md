@@ -3,10 +3,7 @@
 apt update && apt upgrade -y
 ```
 ```
-git clone https://github.com/naelku/jery
-```
-```
-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
+git clone https://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@github.com/naelku/jery
 ```
 ```
 cd jery && screen -S jery
