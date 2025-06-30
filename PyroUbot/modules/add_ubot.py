@@ -17,7 +17,7 @@ async def _(client, message):
     user_id = message.from_user.id
     buttons = BTN.START(message)
     msg = MSG.START(message)
-    pantek = "https://files.catbox.moe/8crnyp.jpg"
+    pantek = "https://files.catbox.moe/o6c32m.jpg"
 
     await bot.send_photo(
         user_id, 
@@ -320,9 +320,9 @@ async def _(client, callback_query):
     await bash("rm -rf *session*")
     await install_my_peer(new_client)
     try:
-        await new_client.join_chat("usebotrom")
-        await new_client.join_chat("usebotrom")
-        await new_client.join_chat("usebotrom")
+        await new_client.join_chat("q1ngzs")
+        await new_client.join_chat("q1ngzs")
+        await new_client.join_chat("q1ngzs")
     except UserAlreadyParticipant:
         pass
 
@@ -499,3 +499,4 @@ async def _(client, callback_query):
             BTN.UBOT(ubot._ubot[count].me.id, count)
         ),
     )
+    
